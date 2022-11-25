@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/worksheet")
-@CrossOrigin
+@CrossOrigin("http://localhost:3000")
 public class WorksheetController {
     @Autowired
     private WorksheetService worksheetService;
@@ -23,6 +23,11 @@ public class WorksheetController {
     @GetMapping("/getAll")
     public List<Worksheet> getAllWorksheets() {
         return worksheetService.getAllWorksheet();
+    }
+
+    @GetMapping("/login")
+    public String admin() {
+        return "This is Admin page!";
     }
 
 }
