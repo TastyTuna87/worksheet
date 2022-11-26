@@ -13,12 +13,10 @@ public class Worksheet {
     private int id;
     private String type_name;
     private String color;
-    private String multi_color;
-    private String slice_color;
-    private double slice_width;
+    private String slice_width;
     private double width;
     private double thickness;
-    private int gem;
+    private String gem;
     private int gem_number;
 
     public Worksheet() {
@@ -48,27 +46,11 @@ public class Worksheet {
         this.color = color;
     }
 
-    public String getMulti_color() {
-        return multi_color;
-    }
-
-    public void setMulti_color(String multi_color) {
-        this.multi_color = multi_color;
-    }
-
-    public String getSlice_color() {
-        return slice_color;
-    }
-
-    public void setSlice_color(String slice_color) {
-        this.slice_color = slice_color;
-    }
-
-    public double getSlice_width() {
+    public String getSlice_width() {
         return slice_width;
     }
 
-    public void setSlice_width(double slice_width) {
+    public void setSlice_width(String slice_width) {
         this.slice_width = slice_width;
     }
 
@@ -88,11 +70,11 @@ public class Worksheet {
         this.thickness = thickness;
     }
 
-    public int getGem() {
+    public String getGem() {
         return gem;
     }
 
-    public void setGem(int gem) {
+    public void setGem(String gem) {
         this.gem = gem;
     }
 
