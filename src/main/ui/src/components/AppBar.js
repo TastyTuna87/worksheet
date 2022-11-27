@@ -1,13 +1,12 @@
-import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
-import { Link } from 'react-router-dom';
-
+import { styled, alpha } from '@mui/material/styles';
+import React from "react";
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -51,6 +50,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
+
 
 export default function AppBarWithSearch() {
   return (
